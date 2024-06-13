@@ -12,6 +12,26 @@ function Stopwatch(){
 
     }, [isRunning])
 
-    return(<Stopwatch />);
+    function start(){
+
+    }
+
+    function stop(){
+
+    }
+
+    function reset(){
+
+    }
+
+    function formatTime(){
+
+    }
+
+    return(
+       <div className='stopwatch'>
+           
+       </div>
+    );
 }
 export default Stopwatch
