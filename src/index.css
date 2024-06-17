@@ -52,3 +52,11 @@ body{
 .stop-button:hover{
     background-color: hsl(10, 90%, 45%);
 }
+
+.reset-button{
+    background-color: hsl(205, 90%, 60%);
+}
+
+.reset-button:hover{
+    background-color: hsl(205, 90%, 55%);
+}
