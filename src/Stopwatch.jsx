@@ -13,7 +13,8 @@ function Stopwatch(){
     }, [isRunning])
 
     function start(){
-
+        setIsRunning(true);
+        startTimeRef.current = Date.now() - elapsedTime;
     }
 
     function stop(){
