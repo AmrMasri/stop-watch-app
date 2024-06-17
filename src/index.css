@@ -36,3 +36,19 @@ body{
     color: white;
     transition: background-color 0.5s ease;
 }
+
+.start-button{
+    background-color: hsl(115, 200%, 40%);
+}
+
+.start-button:hover{
+    background-color: hsl(115, 200%, 35%);
+}
+
+.stop-button{
+    background-color: hsl(10, 90%, 50%);
+}
+
+.stop-button:hover{
+    background-color: hsl(10, 90%, 45%);
+}
