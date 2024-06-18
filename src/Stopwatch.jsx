@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect, useRef } from 'react';
 
 
 function Stopwatch(){
@@ -50,7 +50,7 @@ function Stopwatch(){
         milliseconds = String(milliseconds).padStart(2 , "0");
 
 
-        return `00:00:00:00`;
+        return `${minutes}:${seconds}:${milliseconds}`;
     }
 
     return(
