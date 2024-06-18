@@ -39,20 +39,23 @@ function Stopwatch(){
 
     function formatTime(){
 
-        let hours = math.floor( elapsedTime / (1000 * 60 * 60))
-        let minutes = math.floor( elapsedTime / (1000 * 60 ) % 60)
-        let seconds = math.floor( elapsedTime / (1000) % 60)
-        let milliseconds = math.floor( elapsedTime % 1000 / 10)
+        let hours = Math.floor( elapsedTime / (1000 * 60 * 60));
+        let minutes = Math.floor( elapsedTime / (1000 * 60 ) % 60);
+        let seconds = Math.floor( elapsedTime / (1000) % 60);
+        let milliseconds = Math.floor(( elapsedTime % 1000) / 10);
+
+        hours = String(hours).padStart(2 , "0");
+        minutes = String(minutes).padStart(2 , "0");
+        seconds = String(seconds).padStart(2 , "0");
+        milliseconds = String(milliseconds).padStart(2 , "0");
 
 
-        return `00:00:00`;
+        return `00:00:00:00`;
     }
 
     return(
        <div className='stopwatch'>
-            <div className="display">
-                {formatTime()}
-            </div>
+            <div className="display"> {formatTime()}</div>
             <div className="controls">
                 <button onClick={start} className='start-button'>Start</button>
                 <button onClick={stop} className='stop-button'>stop</button>
